@@ -1,2 +1,1 @@
-str = "stressed"
-puts str.reverse
+puts "stressed".reverse
