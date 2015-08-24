@@ -10,6 +10,6 @@ file.each_line do |line|
 end
 
 ###--- memo ---###
-# gzファイルの解凍 gzip -d jawiki-country.json
+# gzファイルの解凍 gzip -d jawiki-country.json.gz
 # 
 # load : ハッシュに変換（parseも同様）
