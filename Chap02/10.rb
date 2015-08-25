@@ -4,11 +4,11 @@ filename = ARGV[0]
 File.open(filename, "r") do |file|
   r = file.count  # 行数
   file.rewind
-  words = 0
+  words = 0       # 単語数
   file.read.downcase.split(/\s/).each do |word|
     words += 1
   end
-  w = words       # 単語数
+  w = words
   b = file.size   # バイト数
   printf("%3d %3d %3d %s\n", r, w, b, filename);
 end
