@@ -5,7 +5,7 @@ filename = ARGV[0]
 File.open(filename, "r") do |file|
   file.read.downcase.split(/\n/).each do |line|
     puts line.gsub(/\t/, " ")
-    #puts line.tr("\t", " ")
+    #puts line.tr("\t", " ") こっちでも可能
   end
 end
 
