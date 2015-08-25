@@ -8,8 +8,8 @@ File.open(filename, "r") do |file|
   file.read.downcase.split(/\s/).each do |word|
     words += 1
   end
-  w = words
-  b = file.size
+  w = words       # 単語数
+  b = file.size   # バイト数
   printf("%3d %3d %3d %s\n", r, w, b, filename);
 end
 
