@@ -1,14 +1,14 @@
 # encoding: utf-8
 
 fn = ARGV[0]
-cols = []
-cnt = Hash.new {0}
+cols = []           # 文章を格納
+cnt = Hash.new {0}  # ハッシュを生成
 
 File.open(fn, "r") do |file|
   file.each_line do |line|
     cols.push(line.split("\t"))
-    pref = line.split("\t")[0]
-    cnt[pref] += 1
+    pref = line.split("\t")[0]  # 県名
+    cnt[pref] += 1              # 出現回数
   end
 end
 
