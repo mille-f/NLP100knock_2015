@@ -1,6 +1,9 @@
 from itertools import chain
 
-w = [['パ', 'ト', 'カ', 'ー'], ['タ', 'ク', 'シ', 'ー']]
-l = list(map(list, zip(*w)))
-s = list(chain.from_iterable(l))
+w1 = "パトカー"
+w2 = "タクシー"
+l = [list(w1)]
+l.append(list(w2))
+l_t = list(map(list, zip(*l)))
+s = list(chain.from_iterable(l_t))
 print("".join(s))
