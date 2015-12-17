@@ -14,5 +14,4 @@ for i, v in enumerate(w):
     else:
         ans[w[i][0:2]] = i + 1
 
-sorted(ans.items(), key=lambda x: x[1])
-print(ans)
+print(sorted(ans.items(), key=lambda x: x[1]))
