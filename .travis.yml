@@ -8,4 +8,4 @@ bundler_args: --without development --deployment
 cache: bundler
  
 script:
-  - bundle exec rspec spec
+  - bundle exec rspec
